@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="..\style.css">
+    <!-- Script principal -->
+    <script src="..\script\forms.js"></script>
+
+
+    <title>SWIM SITE - Tu portal de natación favorito!</title>
+  </head>
+    <body>
+        <header class="sticky-top">
+        <div class="container">
+            <div class="row">
+                <img src="https://i.pinimg.com/originals/48/11/81/4811814896c06656e29ebf81ccd693ad.png" id="logo">
+            </div>
+        </div>
+        <nav class="navbar  navbar-expand-sm bg-dark navbar-dark">
+          <ul class="navbar-nav container">
+            <li class="nav-item">
+                <a class="nav-link" href="..\index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="natacion.html">QUE ES LA NATACION?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="beneficios.html">BENEFICIOS DE LA NATACION</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ESTILOS</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="crawl.html">CRAWL</a>
+                    <a class="dropdown-item" href="pecho.html">PECHO</a>
+                    <a class="dropdown-item" href="espalda.html">ESPALDA</a>
+                    <a class="dropdown-item" href="mariposa.html">MARIPOSA</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="competencias.html">VIDEOS DE COMPETENCIAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeria.html">GALERIA DE IMAGENES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+        <div class="container" id="main">
+           <h3>encuesta</h3><hr>
+             
+               <form action="#" method="get" id="encuesta">
+                   <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-4">Apellido:</div>
+                       <div class="col-md-4">Nombre:</div>
+                       <div class="col-md-2"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-4"><input type="text" class="form-control" name="apellido"></div>
+                       <div class="col-md-4"><input type="text" class="form-control" name="nombre"></div>
+                       <div class="col-md-2"></div>
+                   </div>
+                  <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-4">Correo electrónico:</div>
+                       <div class="col-md-4">Género:</div>
+                       <div class="col-md-2"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-4"><input type="email" class="form-control" name="email"></div>
+                       <div class="col-md-4">
+                           <select name="genero" id="genero" class="form-control">
+                               <option value="Femenino">Femenino</option>
+                               <option value="Masculino">Masculino</option>
+                           </select>
+                       </div>
+                       <div class="col-md-2"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-4">Selecciona la forma en que practicas natación:</div>
+                       <div class="col-md-4">Estilos que nadas:</div>
+                       <div class="col-md-2"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-4">
+                           <select name="forma" id="forma" class="form-control">
+                               <option value="recreacion">Recreativa</option>
+                               <option value="terapia">Terapia</option>
+                               <option value="competitiva">Competitiva</option>
+                           </select>
+                       </div>
+                       <div class="col-md-4">
+                           <input type="checkbox" class="form control" id="crawl"> Crawl
+                           <input type="checkbox" class="form control" id="pecho"> Pecho
+                           <input type="checkbox" class="form control" id="espalda"> Espalda
+                           <input type="checkbox" class="form control" id="mariposa"> Mariposa
+                       </div>
+                       <div class="col-md-2"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-8">Describe qué es lo que te gusta y cuáles son tus objetivos en esta disciplina:</div>
+                       <div class="col-md-2"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-8"><textarea name="descripcion" id="descripcion" cols="30" rows="10" class="form-control"></textarea></div>
+                       <div class="col-md-2"></div>
+                   </div>
+                   <div class="row"></div>
+                   <div class="row">
+                       <div class="col-md-2"></div>
+                       <div class="col-md-8"><input type="submit" class="form-control btn-primary btn" value="Enviar encuesta" onclick="return validaEncuesta()" id="btn-submit"></div>
+                       <div class="col-md-2"></div>
+                   </div>
+               </form>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  
+</html>

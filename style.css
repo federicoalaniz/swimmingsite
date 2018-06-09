@@ -31,6 +31,7 @@ body{
 }
 #main{
     background-color: whitesmoke;
+    padding-bottom: 60px;
 }
 #main img{
     border-radius: 15px;
@@ -91,5 +92,19 @@ margin-right: auto;
 #btnForm{
     margin-top: 20px;
 }
-
+a img{
+    height: 100px;
+}
+#btn-submit{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#irEncuesta{
+    margin: auto;
+}
+#presentacion p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
 

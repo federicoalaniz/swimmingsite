@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="..\style.css">
+    <!-- Script principal -->
+    <script src="..\script\forms.js"></script>
+
+
+    <title>SWIM SITE - Tu portal de natación favorito!</title>
+  </head>
+    <body>
+        <header class="sticky-top">
+        <div class="container">
+            <div class="row">
+                <img src="https://i.pinimg.com/originals/48/11/81/4811814896c06656e29ebf81ccd693ad.png" id="logo">
+            </div>
+        </div>
+        <nav class="navbar  navbar-expand-sm bg-dark navbar-dark">
+          <ul class="navbar-nav container">
+            <li class="nav-item">
+                <a class="nav-link" href="..\index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="natacion.html">QUE ES LA NATACION?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="beneficios.html">BENEFICIOS DE LA NATACION</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ESTILOS</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="crawl.html">CRAWL</a>
+                    <a class="dropdown-item" href="pecho.html">PECHO</a>
+                    <a class="dropdown-item" href="espalda.html">ESPALDA</a>
+                    <a class="dropdown-item" href="mariposa.html">MARIPOSA</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="competencias.html">VIDEOS DE COMPETENCIAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeria.html">GALERIA DE IMAGENES</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+        <div class="container" id="main">
+              <h3>Contacto</h3>
+              <form action="google.com" method="get">
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">Nombre:</div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">
+                          <input type="text" class="form-control" id="nombre" required>
+                      </div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">Apellido:</div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">
+                          <input type="text" class="form-control" id="apellido" required>
+                      </div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">Correo electrónico:</div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">
+                          <input type="email" class="form-control" placeholder="correo@dominio.com" id="correo" required>
+                      </div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">Asunto del mensaje:</div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">
+                          <input type="text" class="form-control" id="asunto" required>
+                      </div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">Mensaje:</div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">
+                          <textarea name="msg" id="" cols="30" rows="10" class="form-control" placeholder="Escribe tu consulta, te responderemos a la brevedad" id="msg" required></textarea>
+                      </div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  <div class="row" id="btnForm">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">
+                          <input type="submit" class="btn-primary btn-block" onclick="return validaContacto()">
+                      </div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  
+              </form>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
